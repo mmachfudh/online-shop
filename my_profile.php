@@ -37,7 +37,7 @@
 	<div id="profile-content">
 		<?php 
 
-			$file="module/$module/action.php";
+			$file="module/$module/$action.php";
 			if (file_exists($file)) {
 				include_once($file);
 			}else{
