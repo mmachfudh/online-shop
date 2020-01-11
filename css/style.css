@@ -120,6 +120,44 @@ body{
 
 /*=======================================*/
 
+/*====== Nama setelah login ========*/
 #container #header #menu #user{
 	color: white;
+}
+/*==================================*/
+
+/*======== My Profile =============*/
+#bg-page-profile {
+	overflow: hidden;
+}
+
+#bg-page-profile #menu-profile{
+	float: left;
+	width: 240px;
+	background-color: #1e5475;
+}
+
+#bg-page-profile #menu-profile ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#bg-page-profile #menu-profile ul li a{
+	color: white;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+#bg-page-profile #menu-profile ul li a:hover,
+#bg-page-profile #menu-profile ul li a.aktif{
+	background-color: orange;
+}
+
+#bg-page-profile #profile-content {
+	float: left;
+	width: 835px;
+	padding: 10px;
+	background: white;
 }
