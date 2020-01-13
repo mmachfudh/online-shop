@@ -1,3 +1,11 @@
+<?php 
+
+    if($level=="customer"){
+        header("location:".BASE_URL."index.php?page=my_profile&module=pesanan&action=list");
+    }
+
+ ?>
+
 <div id="frame-tambah">
 	<a href="<?= BASE_URL."index.php?page=my_profile&module=kategori&action=form";?>" class="tombol-action">+ Tambah Kategori</a>
 </div>

@@ -1,5 +1,9 @@
 <?php
 
+    if($level=="customer"){
+        header("location:".BASE_URL."index.php?page=my_profile&module=pesanan&action=list");
+    }
+
 	$kategori_id = isset($_GET['kategori_id']) ? $_GET['kategori_id'] : false;
 
 	$kategori ="";

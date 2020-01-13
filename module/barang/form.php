@@ -1,5 +1,9 @@
 <?php
 
+    if($level=="customer"){
+        header("location:".BASE_URL."index.php?page=my_profile&module=pesanan&action=list");
+    }
+
 	$barang_id = isset($_GET['barang_id']) ? $_GET['barang_id'] : false;
 
 	$nama_barang="";

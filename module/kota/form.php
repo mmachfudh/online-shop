@@ -1,4 +1,7 @@
 <?php
+    if($level=="customer"){
+        header("location:".BASE_URL."index.php?page=my_profile&module=pesanan&action=list");
+    }
 
 	$kota_id = isset($_GET['kota_id']) ? $_GET['kota_id'] : false;
 	
