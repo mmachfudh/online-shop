@@ -18,6 +18,7 @@
 <head>
 	<title>Online Shop</title>
 	<link rel="stylesheet" type="text/css" href="<?= BASE_URL."css/style.css";?>">
+	<script src="<?= BASE_URL."js/ckeditor/ckeditor.js";?>" ></script>
 </head>
 <body>
 	<div id="container">
@@ -61,6 +62,5 @@
 			<p>Copyright Onlie Shop 2020</p>
 		</div>
 	</div>
-
 </body>
 </html>
