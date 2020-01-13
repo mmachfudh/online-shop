@@ -1,4 +1,8 @@
 <?php
+
+	if($level=="customer"){
+        header("location:".BASE_URL."index.php?page=my_profile&module=pesanan&action=list");
+    }
       
     $user_id = isset($_GET['user_id']) ? $_GET['user_id'] : "";
       

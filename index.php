@@ -3,6 +3,7 @@
 	include_once("function/helper.php");
 	include_once("function/koneksi.php");
 	$page = isset($_GET['page']) ? $_GET['page'] : false;
+	$kategori_id = isset($_GET['kategori_id']) ? $_GET['kategori_id'] : false;
 
 	// mengambil variabel dari server menggunakan session
 	session_start();
@@ -53,7 +54,7 @@
 				if(file_exists($filename)){
 					include_once($filename);
 				}else{
-					echo "Maaf halaman tidak ditemukan";
+					include_once("main.php");
 				}
 
 			?>
