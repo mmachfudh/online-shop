@@ -19,8 +19,8 @@
 <head>
 	<title>Online Shop</title>
 	<link rel="stylesheet" type="text/css" href="<?= BASE_URL."css/style.css";?>">
+	<link rel="stylesheet" type="text/css" href="<?= BASE_URL."css/banner.css";?>">
 	<script src="<?= BASE_URL."js/ckeditor/ckeditor.js";?>" ></script>
-	<script src="<?= BASE_URL."js/Slides-SlidesJS-3/source/jquery.slides.min.js";?>" ></script>
 
 </head>
 <body>
@@ -64,6 +64,22 @@
 		<div id="footer">
 			<p>Copyright Onlie Shop 2020</p>
 		</div>
+		
 	</div>
 </body>
+	<script src="<?= BASE_URL."js/jquery-3.4.1.min.js";?>" ></script>
+	<script src="<?= BASE_URL."js/Slides-SlidesJS-3/source/jquery.slides.min.js";?>" ></script>
+
+	<script>
+    $(function() {
+      $('#slides').slidesjs({
+        height: 350,
+        play: {
+          auto: true,
+          interval: 3000,
+        },
+		navigation: false
+      });
+    });
+  </script>
 </html>
