@@ -20,6 +20,8 @@
 	<title>Online Shop</title>
 	<link rel="stylesheet" type="text/css" href="<?= BASE_URL."css/style.css";?>">
 	<script src="<?= BASE_URL."js/ckeditor/ckeditor.js";?>" ></script>
+	<script src="<?= BASE_URL."js/Slides-SlidesJS-3/source/jquery.slides.min.js";?>" ></script>
+
 </head>
 <body>
 	<div id="container">
