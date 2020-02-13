@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 12 Feb 2020 pada 23.20
+-- Waktu pembuatan: 13 Feb 2020 pada 01.27
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.1
 
@@ -226,7 +226,8 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`user_id`, `level`, `nama`, `email`, `alamat`, `phone`, `password`, `status`) VALUES
 (2, 'superadmin', 'admin', 'admin@zeroonezero.com', 'jl brawijya', '08889999', '1b3231655cebb7a1f783eddf27d254ca', 'on'),
 (6, 'customer', 'customer', 'customer1@aaa.com', 'jl.Customer brawijaya', '088888', '5f4dcc3b5aa765d61d8327deb882cf99', 'on'),
-(7, 'superadmin', 'Mochammad Machfudh', 'cmmachfudh@gmail.com', 'Batu', '089687574281', '$2y$10$ysfVgP3KMq3.77YVwjOCceGJqqCNgEXC/7TgDZgvUimv7McShO8XK', 'on');
+(7, 'superadmin', 'Mochammad Machfudh', 'cmmachfudh@gmail.com', 'Batu', '089687574281', '$2y$10$ysfVgP3KMq3.77YVwjOCceGJqqCNgEXC/7TgDZgvUimv7McShO8XK', 'on'),
+(8, 'superadmin', 'Admin', 'admin@101.com', 'UB', '01234444', '$2y$10$9wuCh9yf1mF3IDFHj5mVP.t.YMavXSCyWEzVw505QwIbaPOdG6iNq', 'on');
 
 --
 -- Indexes for dumped tables
@@ -329,7 +330,7 @@ ALTER TABLE `pesanan`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

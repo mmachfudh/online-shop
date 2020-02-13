@@ -1,21 +1,21 @@
 <?php
-	// mem proteksi halaman login
-	if($user_id){
-		header("location:".BASE_URL);
-	}
+// mem proteksi halaman login
+if ($user_id) {
+	header("location:" . BASE_URL);
+}
 
- ?>
+?>
 
 <div id="container-user-akses">
-	<form action="<?= BASE_URL."proses_login.php";?>" method="POST">
+	<form action="<?= BASE_URL . "proses_login.php"; ?>" method="POST">
 		<?php
-			$notif  = isset($_GET['notif']) ? $_GET['notif'] : false;
+		$notif  = isset($_GET['notif']) ? $_GET['notif'] : false;
 
-			if($notif=="require"){
-				echo "<div class='notif'>Maaf, password yang anda masukkan salah</div>";
-			}elseif ($notif=="email") {
-				echo "<div class='notif'>Maaf, email anda belum terdaftar</div>";
-			}
+		if ($notif == "require") {
+			echo "<div class='notif'>Maaf, password yang anda masukkan salah</div>";
+		} elseif ($notif == "email") {
+			echo "<div class='notif'>Maaf, email anda belum terdaftar</div>";
+		}
 
 		?>
 		<div class="element-form">
@@ -27,11 +27,11 @@
 		<div class="element-form">
 			<label>Password</label>
 			<span><input type="password" name="password"></span>
-		</div>			
+		</div>
 
 		<div class="element-form">
 			<span><input type="submit" value="Login"></span>
 		</div>
-		
+
 	</form>
 </div>
